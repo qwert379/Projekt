@@ -1,0 +1,387 @@
+/* ========================================= */
+/* RESET                                     */
+/* ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ========================================= */
+/* BODY                                      */
+/* ========================================= */
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f7f7f7;
+
+    color: #111;
+
+    font-size: 20px;
+}
+
+
+/* ========================================= */
+/* HEADER                                    */
+/* ========================================= */
+
+header {
+    background-color: #303030;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px 38px;
+}
+
+
+header h1 {
+    margin: 0 0 18px 0;
+
+    font-size: 40px;
+}
+
+
+header p {
+    margin: 0;
+
+    font-size: 20px;
+}
+
+
+/* ========================================= */
+/* MAIN                                      */
+/* ========================================= */
+
+main {
+    width: 83%;
+
+    max-width: 1100px;
+
+    margin: 60px auto 35px auto;
+}
+
+
+/* ========================================= */
+/* ABOUT ME / TECHNICAL SKILLS               */
+/* ========================================= */
+
+.card {
+    background-color: #f4f4f4;
+
+    width: 75%;
+
+    padding: 45px 35px;
+
+    margin: 0 auto 35px auto;
+
+    border-radius: 7px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+
+.card h2 {
+    margin-top: 0;
+
+    margin-bottom: 18px;
+
+    font-size: 31px;
+}
+
+
+.card p {
+    margin-bottom: 25px;
+
+    line-height: 1.4;
+}
+
+
+/* ========================================= */
+/* TABELA                                    */
+/* ========================================= */
+
+table {
+    width: 100%;
+
+    transform: scale(0.4);
+
+    transform-origin: top center;
+
+    margin-bottom: -10%;
+}
+
+
+/* ========================================= */
+/* PROJECTS - PEŁNA SZEROKOŚĆ EKRANU        */
+/* ========================================= */
+
+.projects-section {
+    width: 100vw;
+
+    margin-left: calc(50% - 50vw);
+
+    margin-top: 50px;
+
+    background-color: #f4f4f4;
+
+    padding: 35px;
+
+    border-radius: 0;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+
+.projects-title {
+    font-size: 34px;
+
+    margin-top: 0;
+
+    margin-bottom: 30px;
+}
+
+
+/* ========================================= */
+/* SINGLE PROJECT                            */
+/* ========================================= */
+
+.project {
+    display: grid;
+
+    grid-template-columns: 1.15fr 0.85fr;
+
+    gap: 35px;
+
+    padding: 25px 0;
+
+    margin-bottom: 0;
+}
+
+
+/* ========================================= */
+/* PROJECT IMAGE                             */
+/* ========================================= */
+
+.project-image {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 0;
+}
+
+
+.project-image img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    border: 2px solid #222;
+}
+
+
+/* ========================================= */
+/* PROJECT INFORMATION                       */
+/* ========================================= */
+
+.project-info {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.project-info h2 {
+    margin-top: 0;
+
+    margin-bottom: 25px;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+}
+
+
+.project-info h3 {
+    margin-top: 0;
+
+    margin-bottom: 25px;
+
+    font-size: 20px;
+
+    line-height: 1.4;
+}
+
+
+.project-info p {
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    line-height: 1.4;
+}
+
+
+/* ========================================= */
+/* PROJECT LINK                              */
+/* ========================================= */
+
+.project-info a {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    color: #4b0082;
+
+    font-size: 20px;
+
+    font-weight: normal;
+}
+
+
+.project-info a:hover {
+    color: #222;
+}
+
+
+/* ========================================= */
+/* MOBILE VERSION                            */
+/* ========================================= */
+
+@media (max-width: 700px) {
+
+    body {
+        font-size: 17px;
+    }
+
+
+    /* HEADER */
+
+    header {
+        padding: 30px 15px 35px;
+    }
+
+
+    header h1 {
+        font-size: 32px;
+    }
+
+
+    header p {
+        font-size: 18px;
+    }
+
+
+    /* MAIN */
+
+    main {
+        width: 90%;
+
+        margin-top: 35px;
+    }
+
+
+    /* CARDS */
+
+    .card {
+        width: 100%;
+
+        padding: 30px 22px;
+
+        margin: 0 auto 35px auto;
+    }
+
+
+    .card h2 {
+        font-size: 27px;
+    }
+
+
+    /* TABELA */
+
+    table {
+        width: 100%;
+
+        transform: scale(0.8);
+
+        transform-origin: top center;
+
+        margin-bottom: -10%;
+    }
+
+
+    /* PROJECTS */
+
+    .projects-section {
+        width: 100vw;
+
+        margin-left: calc(50% - 50vw);
+
+        padding: 25px 20px;
+
+        margin-top: 35px;
+
+        border-radius: 0;
+    }
+
+
+    .projects-title {
+        font-size: 29px;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* PROJECT */
+
+    .project {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 20px 0;
+
+        margin-bottom: 0;
+    }
+
+
+    /* PROJECT IMAGE */
+
+    .project-image img {
+        width: 100%;
+    }
+
+
+    /* PROJECT TEXT */
+
+    .project-info h2 {
+        font-size: 24px;
+    }
+
+
+    .project-info h3 {
+        font-size: 18px;
+    }
+
+
+    .project-info p {
+        line-height: 1.45;
+    }
+
+
+    .project-info a {
+        font-size: 18px;
+    }
+
+}
